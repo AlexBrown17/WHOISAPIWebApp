@@ -8,6 +8,7 @@ import {
 	Pressable,
 } from "react-native";
 import { useForm } from "react-hook-form";
+import apiKey from "./key";
 
 //responsiveness
 const {width} = Dimensions.get('window');
@@ -21,8 +22,6 @@ function Home() {
 	//form actions
 	const { handleSubmit } = useForm();
   const onSubmit = async() => {
-		//my apiKey
-		const apiKey = 'at_PpglHpxAk1FD8c2qqx5iyaWoty7pa';
 
 		//basic input validation
 		if (target !== '') {
